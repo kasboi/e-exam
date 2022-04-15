@@ -1,4 +1,4 @@
-import Login from "./Login";
+import Login from "./Auth/Login";
 
 function App() {
   return (
