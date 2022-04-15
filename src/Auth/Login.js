@@ -40,7 +40,7 @@ const Login = () => {
     <Containers>
       <LeftContainer />
       <RightContainer>
-        { alert && <AlertDisplay /> }
+        { alert && <AlertDisplay setAlert={ setAlert } /> }
         <Container mx="auto">
           <Flex justify="flex-end" my="2rem">
             <Button variant='ghost' mr="1rem" onClick={() => handleClick()}>Login</Button>

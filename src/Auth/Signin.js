@@ -10,7 +10,6 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import app from "../Firebase/Auth";
 
 const auth = getAuth();
-
 const Signin = ({ show, handleShow, setAlert }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -55,7 +54,9 @@ const Signin = ({ show, handleShow, setAlert }) => {
             </Button>
           </InputRightElement>
         </InputGroup>
-        <Button type="submit">Log in</Button>
+        <Button 
+        type="submit"
+        >Log in</Button>
       </Stack>
     </form>
   );
